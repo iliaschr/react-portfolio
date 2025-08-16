@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 function App() {
   const projectList = [
@@ -15,11 +16,9 @@ function App() {
   return (
     <div>
       <Header />
-      <About 
-        name="me" 
-        bio="I'm a computer science student." 
-      />
+      <About name="Ilias Chrysogelos" bio="I'm a computer science student." />
       <Projects projects={projectList} />
+      <Contact />
     </div>
   )
 }
