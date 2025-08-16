@@ -1,15 +1,14 @@
+import ProjectCard from './ProjectCard'
+
 function Projects({ projects }) {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
+      <div className="projects-grid">
         {projects.map((p, index) => (
-          <li key={index}>
-            <h3>{p.title}</h3>
-            <p>{p.description}</p>
-          </li>
+          <ProjectCard key={index} {...p} />
         ))}
-      </ul>
+      </div>
     </section>
   )
 }

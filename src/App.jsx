@@ -9,10 +9,11 @@ import Contact from './components/Contact'
 
 function App() {
   const projectList = [
-    { title: "SIEM Lab", description: "A virtualized SIEM lab." },
-    { title: "Network File System", description: "A simple network file system writeen in C." },
-    { title: "Binary Exploitation projects", description: "A list of writeups." }
+    { title: "SIEM Lab", description: "A virtualized SIEM lab.", link: "https://github.com/iliaschr/SIEM-lab" },
+    { title: "Network File System", description: "A simple network file system in C.", link: "https://github.com/iliaschr/NFS-System" },
+    { title: "Binary Exploitation", description: "A collection of writeups.", link: "https://github.com/iliaschr/write-ups" }
   ]
+
   return (
     <div>
       <Header />
